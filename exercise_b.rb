@@ -39,6 +39,7 @@ users = {
       :name => "rupert",
       :species => "parrot"
     }
+
   ]
   },
   "Avril" => {
@@ -80,6 +81,17 @@ for even in result
 end
 
 # Erik is one lottery number short! Add the number 7 to be included in his lottery numbers
+result = users["Erik"][:lottery_numbers].push(7)
+p result
+
 # Change Erik's hometown to Edinburgh
+result = users["Erik"][:home_town] = ("Edinburgh")
+p result
+
 # Add a pet dog to Erik called "Fluffy"
+users["Erik"][:pets].push({:name => "Fluffy", :species => "Dog"})
+p users["Erik"]
+
 # Add another person to the users hash
+users["Me"] = ({:home_town => "Aberdeen"})
+p users["Me"]

@@ -16,9 +16,25 @@ p stops
 #Work out the index position of "Linlithgow"
 
 p stops.find_index("Linlithgow")
+
 #Remove "Livingston" from the array using its name
+stops.delete("Livingston")
+p stops
+
 #Delete "Cumbernauld" from the array by index
+stops.delete_at(2)
+p stops
+
 #How many stops there are in the array?
+p stops.length()
+
 #How many ways can we return "Falkirk High" from the array?
+p stops[2]
+
 #Reverse the positions of the stops in the array
+p stops.reverse()
+
 #Print out all the stops using a for loop
+for stations in stops
+  p stations
+end
